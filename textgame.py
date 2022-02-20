@@ -1,4 +1,6 @@
-from portulipe import *
+import keyboard
+from time import sleep
+
 interface = ['#**********************','***********************','***********************']
 x = 0
 y = 0
@@ -13,7 +15,7 @@ blank_string = '''
 player = '#'
 
 def update():
-    dormir(0.003)
+    sleep(0.003)
     print(blank_string)
     for a in interface:
         print(a)
